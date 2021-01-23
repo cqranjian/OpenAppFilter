@@ -72,8 +72,10 @@ static int af_fini_log_sysctl(void)
 
 int af_log_init(void){
 	af_init_log_sysctl();
+	return 0;
 }
 
 int af_log_exit(void){
 	af_fini_log_sysctl();
+	return 0;
 }
